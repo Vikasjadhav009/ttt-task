@@ -22,7 +22,7 @@ function mainCtrl($scope,$http) {
 				
 					//use angular http get method to catch api send by nodeJS server
 					
-					$http.get('http://127.0.0.1:3000/resultapi').then(function(res){
+					$http.get('http://127.0.0.1:5000/resultapi').then(function(res){
 
 						
 						 if(test > res.data.unique.length){

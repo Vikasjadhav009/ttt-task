@@ -6,7 +6,7 @@ var app = express();
 var request = require('request');
 
 //check for enviroment veriable otherwise set default port 3000
-var port = process.env.PORT || 3000;
+PORT = process.env.PORT || 5000;
  
 //use ejs for server side templating
 app.set('view engine','ejs');
@@ -112,4 +112,7 @@ var sortArr = repeat.slice(0);
 
 
 
-app.listen(port);
+app.listen(PORT,function(){
+
+	console.log('node app is runnng on port '+PORT);
+});
